@@ -57,9 +57,9 @@ body, html {
   }
 }
 
-@media screen and (max-width: 480px) {
-  /* Adjust layout for mobile devices */
+@media screen and (max-width: 1200px) {
+  /* Adjust layout for larger screens */
   .resume-container {
-    width: 95%; /* Use slightly less width on smaller screens */
+    width: 80%; /* Use 80% of the viewport width on larger screens */
   }
 }
