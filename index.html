@@ -4,231 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roshan Shrestha - Software Engineer</title>
-    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
 </head>
 <body class="bg-gray-50">
-    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-20 relative overflow-hidden">
-        <div class="container mx-auto text-center">
-            <h1 class="text-6xl font-extrabold tracking-tight animate-fade-in">Welcome to My World</h1>
-            <p class="text-xl mt-4 animate-fade-in-delayed">Experience the magic of interactivity and design.</p>
-            <a href="#about" class="mt-6 inline-block bg-white text-indigo-500 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">Explore More</a>
-        </div>
-        <div class="absolute inset-0 pointer-events-none">
-            <canvas id="heroParticles" class="w-full h-full"></canvas>
-        </div>
-    </header>
-
-    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <ul class="flex justify-center space-x-8 py-4">
-            <li><a href="#about" class="text-lg font-medium text-gray-700 hover:text-blue-500">About</a></li>
-            <li><a href="#projects" class="text-lg font-medium text-gray-700 hover:text-blue-500">Projects</a></li>
-            <li><a href="#contact" class="text-lg font-medium text-gray-700 hover:text-blue-500">Contact</a></li>
-        </ul>
-    </nav>
-
     <main class="container mx-auto my-8">
-        <section id="about" class="bg-gray-100 py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-6">About Me</h2>
-                <p class="text-lg">I am a passionate software engineer with a love for creating interactive and visually stunning experiences.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="bg-white py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-6">My Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
-                        <h3 class="text-2xl font-semibold">Project 1</h3>
-                        <p class="mt-2">An innovative solution for modern problems.</p>
-                    </div>
-                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
-                        <h3 class="text-2xl font-semibold">Project 2</h3>
-                        <p class="mt-2">A creative approach to technology.</p>
-                    </div>
-                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
-                        <h3 class="text-2xl font-semibold">Project 3</h3>
-                        <p class="mt-2">Bringing ideas to life with code.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="bg-gradient-to-r from-blue-500 to-green-500 text-white py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
-                <p class="text-lg mb-6">Feel free to reach out for collaborations or just a friendly chat.</p>
-                <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100">Contact Me</a>
-            </div>
-        </section>
-
-        <section class="relative bg-fixed bg-cover bg-center h-96 mb-6" style="background-image: url('https://via.placeholder.com/1920x1080');">
-            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <h1 class="text-5xl font-bold text-white transform transition-transform duration-500 hover:scale-110">
-                    Welcome to My Portfolio
-                </h1>
-            </div>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
-            <p>Embedded software engineer with 3+ years of experience in embedded system design, product development, and testing. Proficient in C, C++, and Linux environments, with hands-on experience in developing and debugging embedded firmware for complex systems. Seeking to contribute to products as an Embedded Engineer to drive innovation in intelligent systems.</p>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Education</h2>
-            <p><strong>UT Arlington</strong>, Arlington, TX</p>
-            <p>BS in Computer Science, GPA: 3.8/4.0 (May 2021)</p>
-            <p>Relevant Coursework: Robotics, Computational Theory, HCI, Theoretical CS, ML, Data Science, Computer Graphics, Computer Networks.</p>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Areas of Expertise</h2>
-            <ul class="list-disc pl-6">
-                <li>Full SDLC, Embedded Systems, UI Development</li>
-                <li>Data Synchronization & Cloud Integration</li>
-                <li>Debugging, Log & Data Analysis</li>
-                <li>CAN Logs, Equipment Classification</li>
-                <li>Database Optimization</li>
-                <li>Linux Proficiency</li>
-            </ul>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
-            <ul class="list-disc pl-6">
-                <li>Programming: C, C++, Qt, Python, SQL, Squish, Google Protobuf, SIL, HIL, TDD</li>
-                <li>Embedded Systems: Embedded frameworks (Linux, freeRTOS)</li>
-                <li>Data Visualization: QGIS, CSV, Log Analysis, CAN Analyzer, Trace Client, Datadog, Elastic</li>
-                <li>Protocols & Interfaces: CAN, MQTT, SPI, I2C, NFC, UART, GPIO, Wi-Fi</li>
-                <li>Hardware Debugging: IDE, JTAG interfaces, TraceLogs, DebugDump, ErrorLogs</li>
-                <li>Microprocessors: ESP32-C6, Arduino boards, RaspberryPis</li>
-                <li>Development Tools: Git, CoCo, Jenkins, ADO, Rally</li>
-                <li>OS: Linux (VMware, VirtualBox, WSL), Windows</li>
-            </ul>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Relevant Experience</h2>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">L&T Technology Services (Contractor for John Deere)</h3>
-                <p>Embedded Software Engineer (April 2022 – Present)</p>
-                <ul class="list-disc pl-6">
-                    <li>Spearheaded product development for John Deere's embedded display systems, focusing on precision agriculture, plugins, and driver development using Qt C++.</li>
-                    <li>Led classification and integration efforts for a wide array of John Deere equipment, optimizing data management and user accessibility.</li>
-                    <li>Developed and maintained over 12 equipment plugins, enhancing the versatility of John Deere's product line for various agricultural machinery.</li>
-                    <li>Debugged and resolved critical field issues using Trace Client, log file (.csv) analysis, CAN analysis, and field data visualization with QGIS.</li>
-                </ul>
-            </div>
-            <div class="mb-4">
-                <h3 class="text-xl font-semibold">L&T Technology Services</h3>
-                <p>Software Engineer (August 2024 – Present)</p>
-                <ul class="list-disc pl-6">
-                    <li>Developed and implemented embedded firmware for the ZekerIt system, utilizing microcontrollers such as Raspberry Pi and low-power ESP32-C6-DevKitC-1-N8.</li>
-                    <li>Integrated various sensors and door locks, managed protocols (I2C, SPI, UART, JTAG), and executed Board Services Program (BSP) using FreeRTOS and multithreading.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Leadership</h2>
-            <p><strong>Nepalese Society Arlington</strong>, Arlington, TX</p>
-            <p>International Student Mentor (January - September 2019)</p>
-            <p>Guided new international students as they adjusted to life in a foreign land, offering transportation, advice, and support.</p>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Language Skills and Interests</h2>
-            <p><strong>Languages:</strong> Fluent Nepali & Hindi, Beginner Spanish</p>
-            <p><strong>Interests:</strong> Gym, Tennis, Ping Pong, Soccer, Manga Comics, Books, Hiking</p>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
-            <form action="#" method="POST" class="space-y-4">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-                </div>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Send</button>
-            </form>
-        </section>
-
-        <section class="flex justify-center items-center h-96 mb-6">
-            <div class="relative w-64 h-64 transform-style-preserve-3d animate-spin-slow">
-                <div class="absolute w-full h-full bg-blue-500 opacity-75 transform rotate-x-0 translate-z-32"></div>
-                <div class="absolute w-full h-full bg-red-500 opacity-75 transform rotate-x-90 translate-z-32"></div>
-                <div class="absolute w-full h-full bg-green-500 opacity-75 transform rotate-x-180 translate-z-32"></div>
-                <div class="absolute w-full h-full bg-yellow-500 opacity-75 transform rotate-x-270 translate-z-32"></div>
-                <div class="absolute w-full h-full bg-purple-500 opacity-75 transform rotate-y-90 translate-z-32"></div>
-                <div class="absolute w-full h-full bg-teal-500 opacity-75 transform rotate-y-270 translate-z-32"></div>
-            </div>
-        </section>
-
-        <section class="bg-white shadow-md rounded-lg p-6 mb-6 transform transition-transform duration-500 hover:rotate-y-6 perspective-1000">
-            <h2 class="text-2xl font-bold mb-4">3D Interactive Card</h2>
-            <div class="relative w-full h-64 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg transform-style-preserve-3d">
+        <section class="relative bg-white shadow-md rounded-lg p-6 mb-6 transform-style-preserve-3d">
+            <div class="relative w-full h-64 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg">
                 <div class="absolute inset-0 bg-white p-4 rounded-lg backface-hidden">
-                    <h3 class="text-xl font-semibold">Front Side</h3>
-                    <p>Hover to see the back side!</p>
+                    <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
+                    <p>Embedded software engineer with 3+ years of experience in embedded system design, product development, and testing. Proficient in C, C++, and Linux environments, with hands-on experience in developing and debugging embedded firmware for complex systems. Seeking to contribute to products as an Embedded Engineer to drive innovation in intelligent systems.</p>
                 </div>
                 <div class="absolute inset-0 bg-gray-800 text-white p-4 rounded-lg transform rotate-y-180 backface-hidden">
-                    <h3 class="text-xl font-semibold">Back Side</h3>
-                    <p>This is the back of the card.</p>
+                    <h2 class="text-2xl font-bold mb-4">Education</h2>
+                    <p><strong>UT Arlington</strong>, Arlington, TX</p>
+                    <p>BS in Computer Science, GPA: 3.8/4.0 (May 2021)</p>
+                    <p>Relevant Coursework: Robotics, Computational Theory, HCI, Theoretical CS, ML, Data Science, Computer Graphics, Computer Networks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative bg-white shadow-md rounded-lg p-6 mb-6 transform-style-preserve-3d">
+            <div class="relative w-full h-64 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg shadow-lg">
+                <div class="absolute inset-0 bg-white p-4 rounded-lg backface-hidden">
+                    <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
+                    <ul class="list-disc pl-6">
+                        <li>Programming: C, C++, Qt, Python, SQL, Squish, Google Protobuf, SIL, HIL, TDD</li>
+                        <li>Embedded Systems: Embedded frameworks (Linux, freeRTOS)</li>
+                        <li>Data Visualization: QGIS, CSV, Log Analysis, CAN Analyzer, Trace Client, Datadog, Elastic</li>
+                        <li>Protocols & Interfaces: CAN, MQTT, SPI, I2C, NFC, UART, GPIO, Wi-Fi</li>
+                        <li>Hardware Debugging: IDE, JTAG interfaces, TraceLogs, DebugDump, ErrorLogs</li>
+                        <li>Microprocessors: ESP32-C6, Arduino boards, RaspberryPis</li>
+                        <li>Development Tools: Git, CoCo, Jenkins, ADO, Rally</li>
+                        <li>OS: Linux (VMware, VirtualBox, WSL), Windows</li>
+                    </ul>
+                </div>
+                <div class="absolute inset-0 bg-gray-800 text-white p-4 rounded-lg transform rotate-y-180 backface-hidden">
+                    <h2 class="text-2xl font-bold mb-4">Relevant Experience</h2>
+                    <p><strong>L&T Technology Services (Contractor for John Deere)</strong></p>
+                    <p>Embedded Software Engineer (April 2022 – Present)</p>
+                    <ul class="list-disc pl-6">
+                        <li>Spearheaded product development for John Deere's embedded display systems, focusing on precision agriculture, plugins, and driver development using Qt C++.</li>
+                        <li>Led classification and integration efforts for a wide array of John Deere equipment, optimizing data management and user accessibility.</li>
+                        <li>Developed and maintained over 12 equipment plugins, enhancing the versatility of John Deere's product line for various agricultural machinery.</li>
+                        <li>Debugged and resolved critical field issues using Trace Client, log file (.csv) analysis, CAN analysis, and field data visualization with QGIS.</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
+    <script type="module">
+        import * as THREE from 'three';
 
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Roshan Shrestha. All rights reserved.</p>
-        </div>
-    </footer>
+        // Create a 3D background using Three.js
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
 
-    <script>
-        // Particle effect for hero section
-        const canvas = document.getElementById('heroParticles');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        // Add a rotating sphere to the background
+        const geometry = new THREE.SphereGeometry(50, 32, 32);
+        const material = new THREE.MeshBasicMaterial({ color: 0x1e90ff, wireframe: true });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
 
-        const particles = [];
-        for (let i = 0; i < 150; i++) {
-            particles.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                radius: Math.random() * 3 + 1,
-                dx: Math.random() * 2 - 1,
-                dy: Math.random() * 2 - 1
-            });
+        camera.position.z = 100;
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            sphere.rotation.x += 0.005;
+            sphere.rotation.y += 0.005;
+            renderer.render(scene, camera);
         }
 
-        function drawParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-                ctx.fill();
-                p.x += p.dx;
-                p.y += p.dy;
+        animate();
 
-                if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-                if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
-            });
-            requestAnimationFrame(drawParticles);
-        }
-
-        drawParticles();
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
     </script>
 </body>
 </html>
