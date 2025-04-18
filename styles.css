@@ -48,3 +48,57 @@ body, html {
     @apply w-4/5;
   }
 }
+
+/* Add 3D effects and modern design tweaks */
+
+/* Header 3D shadow effect */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transform: perspective(1000px) rotateX(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+header:hover {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+/* Card 3D hover effect */
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: perspective(1000px) rotateY(0deg);
+    animation: fadeIn 1s ease-in;
+}
+
+section:hover {
+    transform: perspective(1000px) rotateY(5deg);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling for interactive elements */
+button {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #1d4ed8; /* Darker blue */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add animations for enhanced user experience */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
